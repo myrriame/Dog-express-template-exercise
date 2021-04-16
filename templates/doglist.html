@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    ${head}
+</head>
+
+<body>
+    <h1>My Fave Dogs List</h1>
+    <ul>
+        ${dogs.map(dog =>`
+        <li><a href="dogs/${dog.name}">${dog.breed}</a></li>
+        `).join('')
+        }
+        <li><a href="/">Go Back</a></li>
+    </ul>
+
+</body>
+
+</html>
